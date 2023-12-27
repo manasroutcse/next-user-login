@@ -1,4 +1,4 @@
-export { errorHandler };
+
 
 function errorHandler(err, res) {
     if (typeof (err) === 'string') {
@@ -14,3 +14,4 @@ function errorHandler(err, res) {
     // default to 500 server error
     return res.status(500).json({ message: err.message });
 }
+export { errorHandler };
