@@ -2,7 +2,7 @@ import { errorHandler, basicAuthMiddleware } from 'helpers/api';
 
 // export { apiHandler };
 
-export default function apiHandler(handler) {
+ export default function apiHandler(handler) {
     return async (req, res) => {
         const method = req.method.toLowerCase();
 
@@ -22,3 +22,4 @@ export default function apiHandler(handler) {
         }
     }
 }
+// export { apiHandler };
