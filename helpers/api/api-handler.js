@@ -1,8 +1,8 @@
-import { errorHandler, basicAuthMiddleware } from 'helpers/api';
+import { errorHandler, basicAuthMiddleware } from '../../helpers/api';
 
-// export { apiHandler };
+export { apiHandler };
 
- export default function apiHandler(handler) {
+function apiHandler(handler) {
     return async (req, res) => {
         const method = req.method.toLowerCase();
 

@@ -1,4 +1,4 @@
-import { usersRepo } from 'helpers/api';
+import { usersRepo } from '../../helpers/api';
 
 export { basicAuthMiddleware };
 
